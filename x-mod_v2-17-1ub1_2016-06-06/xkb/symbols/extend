@@ -304,17 +304,17 @@ xkb_symbols "lv5" {
                    Redirect(key=<ESC>)  , Redirect(key=<ESC>)  ]  // <ESC>
                };  // [ {
     key <AD12> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Menu                 , Menu                  , // Menu
-                   apostrophe           , quotedbl             ], // ' "
+                   semicolon            , colon                 , // ; :
+                   semicolon            , colon                ], // ' "
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<MENU>) , Redirect(key=<MENU>)  , // <MENU>/<COMP>
+                   NoAction()           , NoAction()            ,
                    NoAction()           , NoAction()           ]
                };  // ] }
     key <BKSL> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   XF86Favorites        , XF86MyComputer        , // BrFav
-                   colon                , bar                  ], //  :
+                   1                    , exclam                , // 1 !
+                   1                    , exclam               ], // 1 !
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<I164>,clearmods=all), Redirect(key=<I165>,clearmods=all), // <I164>/<I165>(‡‡)
+                   NoAction()           , NoAction()            ,
                    NoAction()           , NoAction()           ]
                };  // \ |
 
