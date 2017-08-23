@@ -241,17 +241,17 @@ xkb_symbols "lv5" {
                    NoAction()           , NoAction()           ]
                };  // Cmk W
     key <AD03> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   XF86Back             , XF86Back              , // BrBck
-                   End                  , KP_End               ], // End
+                   Pointer_Left         , Pointer_Left          , // PtrLe(††)
+                   KP_0                 , U21D5                ], // KP_0 ↕ ⇕
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<I166>) , Redirect(key=<I166>)  , // <I166>(‡‡)
+                   MovePtr(x=-8,y=+0)   , MovePtr(x=-8,y=+0)    , // PtrLe(††)
                    NoAction()           , NoAction()           ]
                };  // Cmk F
     key <AD04> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   XF86Forward          , XF86Forward           , // BrFwd
-                   Delete               , KP_Delete            ], // Del
+                   Pointer_Right        , Pointer_Right         , // PtrRi(††)
+                   KP_Decimal           , colon                ], // KP_. :
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<I167>) , Redirect(key=<I167>)  , // <I167>(‡‡)
+                   MovePtr(x=+8,y=+0)   , MovePtr(x=+8,y=+0)    , // PtrRi(††)
                    NoAction()           , NoAction()           ]
                };  // Cmk P
     key <AD05> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
@@ -441,36 +441,39 @@ xkb_symbols "lv5" {
                    NoAction()           , NoAction()           ]
                };  // B
     key <AB06> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Pointer_Button2      , Pointer_Button2       , // MBt(††)
-                   comma                , semicolon            ], //  , ;
-                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   PtrBtn(button=2)     , PtrBtn(button=2)      , // PtrMBt
-                   NoAction()           , NoAction()           ]
-               };  // Cmk K
-    key <AB07> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Pointer_Button3      , Pointer_Button3       , // RBt(††)
                    KP_0                 , U21D5                ], // KP_0 ↕ ⇕
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    PtrBtn(button=3)     , PtrBtn(button=3)      , // PtrRBt
                    NoAction()           , NoAction()           ]
+               };  // Cmk K
+    key <AB07> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
+                   bracketleft          , braceleft             , // [ {
+                   bracketleft          , braceleft            ], // [ {
+                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
+                   NoAction()           , NoAction()            , //
+                   NoAction()           , NoAction()           ]  //
                };  // M
     key <AB08> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Pointer_Left         , Pointer_Left          , // PtrLe(††)
-                   KP_0                 , U21D5                ], // KP_0 ↕ ⇕
+                   parenleft            , less                  , // (
+                   parenleft            , less                 ], // (
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   MovePtr(x=-8,y=+0)   , MovePtr(x=-8,y=+0)    , // PtrLe(††)
-                   NoAction()           , NoAction()           ]
+                   NoAction()           , NoAction()            , //
+                   NoAction()           , NoAction()           ]  //
                };  // , <
     key <AB09> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Pointer_Right        , Pointer_Right         , // PtrRi(††)
-                   KP_Decimal           , colon                ], // KP_. :
+                   parenright           , more                  , // (
+                   parenright           , more                 ], // (
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   MovePtr(x=+8,y=+0)   , MovePtr(x=+8,y=+0)    , // PtrRi(††)
-                   NoAction()           , NoAction()           ]
+                   NoAction()           , NoAction()            , //
+                   NoAction()           , NoAction()           ]  //
                };  // . >
     key <AB10> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Multi_key            , Multi_key             , // Compose
-                   KP_Divide            , KP_Divide            ]  // KP_/
+                   bracketright         , braceright            , // ] }
+                   bracketright         , braceright           ], // ] }
+                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
+                   NoAction()           , NoAction()            , //
+                   NoAction()           , NoAction()           ]  //
                };  // / ?
 
 // NOTE: The Space key should preserve the Shift state; it's special because both levels have the same symbol.
