@@ -227,11 +227,11 @@ xkb_symbols "lv5" {
 //               };  // BackSpace
 
     key <AD01> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Escape               , Escape                , // Esc
-                   Home                 , KP_Home              ], // Home
+                   grave                , asciitilde            , // ` ~      
+                   dead_tilde           , asciitilde           ]  // ` ~      
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<ESC>)  , Redirect(key=<ESC>)   , // <ESC>
-                   Redirect(key=<HOME>) , Redirect(key=<HOME>) ]  // <HOME>
+                   NoAction()           , NoAction()            ,
+                   NoAction()           , NoAction()           ]
                };  // Cmk Q
     key <AD02> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    XF86ScrollUp         , XF86ScrollRight       , // ScrollUp(††)
