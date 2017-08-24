@@ -141,7 +141,7 @@ xkb_symbols "lv5" {
     key <TLDE> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Return               , Return                , // Enter
                    Return               , Return               ], // Enter
-                 actions[Group1]=[NoAction(),SetMods(mods=Shift),NoAction(),SetMods(mods=Shift),
+                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    Redirect(key=<RTRN>) , Redirect(key=<RTRN>)  , // <RTRN>
                    Redirect(key=<RTRN>) , Redirect(key=<RTRN>) ]  // <RTRN>
                };  // ` ~
@@ -228,13 +228,13 @@ xkb_symbols "lv5" {
 
     key <AD01> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    grave                , asciitilde            , // ` ~      
-                   dead_tilde           , asciitilde           ]  // ` ~      
+                   dead_tilde           , asciitilde           ], // ` ~      
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            ,
                    NoAction()           , NoAction()           ]
                };  // Cmk Q
     key <AD02> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   XF86ScrollUp         , XF86ScrollRight       , // ScrollUp(††)
+                   Up                   , XF86ScrollUp          , // ScrollUp(††)
                    Up                   , KP_Up                ], //  ↑
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    PtrBtn(button=4)     , PtrBtn(button=6)      , // PtrWhBtUp/Ri
