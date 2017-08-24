@@ -300,8 +300,8 @@ xkb_symbols "lv5" {
                    Escape               , Escape                , // Esc
                    Escape               , Escape               ], // Esc
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<ESC>)  , Redirect(key=<ESC>)   , // <ESC>
-                   Redirect(key=<ESC>)  , Redirect(key=<ESC>)  ]  // <ESC>
+                   NoAction()           , NoAction()            , // 
+                   NoAction()           , NoAction()           ]  //
                };  // [ {
     key <AD12> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    semicolon            , colon                 , // ; :
@@ -322,8 +322,8 @@ xkb_symbols "lv5" {
                    Escape               , Escape                , // Esc
                    Escape               , Escape               ], // Esc
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<ESC>)  , Redirect(key=<ESC>)   , // <ESC>
-                   Redirect(key=<ESC>)  , Redirect(key=<ESC>)  ]  // <ESC>
+                   NoAction()           , NoAction()            , // 
+                   NoAction()           , NoAction()           ]  //
                };  // Cmk A
     key <AC02> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Down                 , XF86ScrollDown        , // ScrollDown(††)
