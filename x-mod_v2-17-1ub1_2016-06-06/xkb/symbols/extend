@@ -319,11 +319,11 @@ xkb_symbols "lv5" {
                };  // \ |
 
     key <AC01> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Escape               , Escape                , // Esc
-                   Escape               , Escape               ], // Esc
+                   Alt_L                , Alt_L                 , // Alt
+                   space                , nobreakspace         ], // Space
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   NoAction()           , NoAction()            , // 
-                   NoAction()           , NoAction()           ]  //
+                   SetMods(mods=Alt)    , SetMods(mods=Alt)     , // Alt mod for <LALT>
+                   NoAction()           , NoAction()           ]
                };  // Cmk A
     key <AC02> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Down                 , XF86ScrollDown        , // ScrollDown(††)
@@ -479,11 +479,11 @@ xkb_symbols "lv5" {
 // NOTE: The Space key should preserve the Shift state; it's special because both levels have the same symbol.
 //       One might use a key type that has the 'preserve[Shift] = Shift;' property. However, I fix it directly.
    key <SPCE> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Alt_L                , Alt_L                 , // Alt
-                   space                , nobreakspace         ], // Space
+                   Escape               , Escape                , // Esc
+                   Escape               , Escape               ], // Esc
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   SetMods(mods=Alt)    , SetMods(mods=Alt)     , // Alt mod for <LALT>
-                   NoAction()           , NoAction()           ]
+                   NoAction()           , NoAction()            , // 
+                   NoAction()           , NoAction()           ]  //
                };  // <SPCE>
 //    key <CAPS> { [ NoSymbol,NoSymbol,NoSymbol,NoSymbol ] };  // CapsLock
 
