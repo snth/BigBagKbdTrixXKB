@@ -479,8 +479,8 @@ xkb_symbols "lv5" {
 // NOTE: The Space key should preserve the Shift state; it's special because both levels have the same symbol.
 //       One might use a key type that has the 'preserve[Shift] = Shift;' property. However, I fix it directly.
    key <SPCE> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Escape               , Escape                , // Esc
-                   Escape               , Escape               ], // Esc
+                   Escape               , Space                 , // Esc
+                   Escape               , Space                ], // Esc
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , // 
                    NoAction()           , NoAction()           ]  //
