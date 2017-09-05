@@ -455,22 +455,22 @@ xkb_symbols "lv5" {
                    NoAction()           , NoAction()           ]  //
                };  // M
     key <AB08> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   bracketright         , braceright            , // ] }
-                   bracketright         , braceright           ], // ] }
+                   parenleft            , underscore            , // (
+                   parenleft            , underscore           ], // (
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
                };  // , <
     key <AB09> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   9                    , parenleft             , // (
-                   9                    , parenleft            ], // (
+                   parenright           , ampersand             , // (
+                   parenright           , ampersand            ], // (
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
                };  // . >
     key <AB10> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   0                    , parenright            , // (
-                   0                    , parenright           ], // (
+                   bracketright         , braceright            , // ] }
+                   bracketright         , braceright           ], // ] }
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
