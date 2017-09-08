@@ -441,10 +441,10 @@ xkb_symbols "lv5" {
                    NoAction()           , NoAction()           ]
                };  // B
     key <AB06> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Pointer_Button3      , Pointer_Button3       , // RBt(††)
-                   KP_0                 , U21D5                ], // KP_0 ↕ ⇕
+                   Tab                  , Tab                   , // Tab
+                   Tab                  , Tab                  ], // Tab
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   PtrBtn(button=3)     , PtrBtn(button=3)      , // PtrRBt
+                   NoAction()           , NoAction()            , // Tab
                    NoAction()           , NoAction()           ]
                };  // Cmk K
     key <AB07> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
