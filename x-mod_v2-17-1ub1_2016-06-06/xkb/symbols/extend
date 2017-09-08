@@ -63,14 +63,12 @@ xkb_symbols "lv5" {
 //    key.type[group1]="EIGHT_LEVEL"; // (Caps)Lock state not used on these keys
     key.type[group1]="EIGHT_LEVEL_SEMIALPHABETIC"; // Lock affects lv1/5 but not lv3/7 - a bit inflexible but OK I guess
 
-// NOTE: Earlier, if I set lv5-6 of Esc to Caps_Lock, lv1-4 would be CapsLock PLUS Esc! Is this fixed now?
-//       If not, I might not have to send the Caps_Lock keysymbol as long as the LockMods action is there?
     key <ESC>  { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Caps_Lock            , Caps_Lock             , // Caps_Lock
-                   Caps_Lock            , Caps_Lock            ], // Caps_Lock
+                   Return               , Return                , // Enter
+                   Return               , Return               ], // Enter
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   LockMods(mods=Lock)   , LockMods(mods=Lock)   , // Lock mod for <CAPS>
-                   LockMods(mods=Lock)   , LockMods(mods=Lock)  ]  // Lock mod for <CAPS>
+                   Redirect(key=<RTRN>) , Redirect(key=<RTRN>)  , // <RTRN>
+                   Redirect(key=<RTRN>) , Redirect(key=<RTRN>) ]  // <RTRN>
                };  // ; Esc (one could also use <SCLK> aka ScrollLock for Caps, if desired)
 
 // NOTE: Many are used to Ctrl+Alt+<FK##> being XF86_Switch_VT_## keys! This is lost with Extend. Use Ext+AltGr+<FK##> now.
@@ -138,12 +136,14 @@ xkb_symbols "lv5" {
                    NoAction()           , NoAction()           ] // (in inet(evdev), XF86Launch4 is <I211>)
                };  // F12
 
+// NOTE: Earlier, if I set lv5-6 of Esc to Caps_Lock, lv1-4 would be CapsLock PLUS Esc! Is this fixed now?
+//       If not, I might not have to send the Caps_Lock keysymbol as long as the LockMods action is there?
     key <TLDE> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Return               , Return                , // Enter
-                   Return               , Return               ], // Enter
+                   Caps_Lock            , Caps_Lock             , // Caps_Lock
+                   Caps_Lock            , Caps_Lock            ], // Caps_Lock
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<RTRN>) , Redirect(key=<RTRN>)  , // <RTRN>
-                   Redirect(key=<RTRN>) , Redirect(key=<RTRN>) ]  // <RTRN>
+                   LockMods(mods=Lock)   , LockMods(mods=Lock)   , // Lock mod for <CAPS>
+                   LockMods(mods=Lock)   , LockMods(mods=Lock)  ]  // Lock mod for <CAPS>
                };  // ` ~
     key <AE01> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    F1      , F1     , exclam           , exclam             ], // !
