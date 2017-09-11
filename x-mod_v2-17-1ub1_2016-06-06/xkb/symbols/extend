@@ -448,29 +448,29 @@ xkb_symbols "lv5" {
                    NoAction()           , NoAction()           ]
                };  // Cmk K
     key <AB07> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   bracketleft          , braceleft             , // [ {
-                   bracketleft          , braceleft            ], // [ {
+                   parenleft            , ampersand             , // (
+                   parenleft            , ampersand            ], // (
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
                };  // M
     key <AB08> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   parenleft            , underscore            , // (
-                   parenleft            , underscore           ], // (
+                   bracketleft          , braceleft             , // [ {
+                   bracketleft          , braceleft            ], // [ {
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
                };  // , <
     key <AB09> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   parenright           , ampersand             , // (
-                   parenright           , ampersand            ], // (
+                   bracketright         , braceright            , // ] }
+                   bracketright         , braceright           ], // ] }
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
                };  // . >
     key <AB10> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   bracketright         , braceright            , // ] }
-                   bracketright         , braceright           ], // ] }
+                   parenright           , underscore            , // (
+                   parenright           , underscore           ], // (
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
