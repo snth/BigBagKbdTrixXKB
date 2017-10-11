@@ -227,11 +227,11 @@ xkb_symbols "lv5" {
 //               };  // BackSpace
 
     key <AD01> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   grave                , asciitilde            , // ` ~      
-                   dead_tilde           , asciitilde           ], // ` ~      
+                   Escape               , Escape                , // Esc
+                   Escape               , Escape               ], // Esc
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   NoAction()           , NoAction()            ,
-                   NoAction()           , NoAction()           ]
+                   NoAction()           , NoAction()            , // 
+                   NoAction()           , NoAction()           ]  //
                };  // Cmk Q
     key <AD02> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Up                   , XF86ScrollUp          , // ScrollUp(††)
@@ -297,15 +297,15 @@ xkb_symbols "lv5" {
                    Redirect(key=<PGUP>) , NoAction()           ]
                };  // ; :
     key <AD11> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Escape               , Escape                , // Esc
-                   Escape               , Escape               ], // Esc
-                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   NoAction()           , NoAction()            , // 
-                   NoAction()           , NoAction()           ]  //
-               };  // [ {
-    key <AD12> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    semicolon            , colon                 , // ; :
                    semicolon            , colon                ], // ' "
+                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
+                   NoAction()           , NoAction()            ,
+                   NoAction()           , NoAction()           ]
+               };  // [ {
+    key <AD12> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
+                   grave                , asciitilde            , // ` ~      
+                   dead_tilde           , asciitilde           ], // ` ~      
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            ,
                    NoAction()           , NoAction()           ]
