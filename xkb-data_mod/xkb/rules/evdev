@@ -993,6 +993,8 @@
 //  *			misc:cmk_curl_dh	= +colemak(cmk_ed_dh):4
 
 ! option	=	symbols
+  xzorak:shift_alt_ctrl = +xzorak(shift_alt_ctrl)
+  xzorak:meta_shift_alt_ctrl = +xzorak(meta_shift_alt_ctrl)
   grp:shift_toggle	=	+group(shifts_toggle)
   altwin:menu		=	+altwin(menu)
   altwin:meta_alt	=	+altwin(meta_alt)

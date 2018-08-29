@@ -1,0 +1,52 @@
+default  partial alphanumeric_keys modifier_keys
+
+partial alphanumeric_keys
+xkb_symbols "xz1" {
+
+    name[Group1]= "English (Xzorak, transitional Dvorak to Colemak layout)";
+
+    include "us(dvorak)"
+
+    // Top Row
+    key <AE11> { [	minus,	underscore	]	};
+    key <AE12> { [	equal,	plus		]	};
+
+    // Upper Row
+    key <AD11> { [ bracketleft,	braceleft	]	};
+    key <AD12> { [ bracketright, braceright,  dead_tilde] };
+
+    // Home Row
+    key <AC11> { [   semicolon,	colon, dead_ogonek, dead_doubleacute ] };
+
+    // Lower Row
+    key <AB01> { [	    x,	X		]	};
+    key <AB05> { [	    z,	Z		]	};
+
+    key <AB10> { [	slash,	question	]	};
+
+};
+
+
+// Shift is mapped to the Alt keys, Alt to the Ctrl keys, and Ctrl to the Shift keys.
+partial modifier_keys
+xkb_symbols "shift_alt_ctrl" {
+    key <LALT> { [ Shift_L, Shift_L  ] };
+    key <RALT> { type[Group1] = "TWO_LEVEL",
+                 symbols[Group1] = [ Shift_R, Shift_R ] };
+    key <LCTL> { [ Alt_L         ] };
+    key <RCTL> { [ Alt_R         ] };
+    key <LFSH> { [ Control_L ] };
+    key <RTSH> { [ Control_R ] };
+    modifier_map Control { <LFSH>, <RTSH> };
+    modifier_map Mod1 { <LCTL>, <RCTL> };   // Alt status
+};
+
+// Meta is mapped to second level of Alt keys.
+partial modifier_keys
+xkb_symbols "meta_shift_alt_ctrl" {
+    key <LCTL> { [ Alt_L, Meta_L ] };
+    key <RCTL> { type[Group1] = "TWO_LEVEL",
+                 symbols[Group1] = [ Alt_R, Meta_R ] };
+    modifier_map Mod1 { Alt_L, Alt_R, Meta_L, Meta_R };
+//  modifier_map Mod4 {};
+};
