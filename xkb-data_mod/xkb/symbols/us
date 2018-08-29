@@ -280,7 +280,7 @@ xkb_symbols "xzorak" {
     key <AE11> { [	minus,	underscore	]	};
     key <AE12> { [	equal,	plus		]	};
 
-    key <AD01> { [   semicolon,	colon, dead_ogonek, dead_doubleacute ] };
+    key <AD01> { [  apostrophe,	quotedbl, dead_acute, dead_diaeresis	] };
     key <AD02> { [	comma,	less,   dead_cedilla, dead_caron	] };
     key <AD03> { [      period,	greater, dead_abovedot, periodcentered	] };
     key <AD04> { [	    p,	P		]	};
@@ -303,7 +303,7 @@ xkb_symbols "xzorak" {
     key <AC08> { [	    t,	T		]	};
     key <AC09> { [	    n,	N		]	};
     key <AC10> { [	    s,	S		]	};
-    key <AC11> { [  apostrophe,	quotedbl, dead_acute, dead_diaeresis	] };
+    key <AC11> { [   semicolon,	colon, dead_ogonek, dead_doubleacute ] };
 
     key <AB01> { [	    x,	X		]	};
     key <AB02> { [	    q,	Q		]	};
