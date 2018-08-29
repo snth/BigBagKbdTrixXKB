@@ -448,29 +448,29 @@ xkb_symbols "lv5" {
                    Redirect(key=<PGDN>) , NoAction()           ]
                };  // N
     key <AB07> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   parenleft            , ampersand             , // (
-                   parenleft            , ampersand            ], // (
+                   9                    , 9                     , // 9 (
+                   parenleft            , ampersand            ], // 9 (
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
                };  // M
     key <AB08> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   bracketleft          , braceleft             , // [ {
-                   bracketleft          , braceleft            ], // [ {
+                   0                    , 0                     , // 0 )
+                   parenright           , underscore           ], // 0 )
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
                };  // , <
     key <AB09> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   bracketright         , braceright            , // ] }
-                   bracketright         , braceright           ], // ] }
+                   minus                , minus                 , // ] }
+                   underscore           , underscore           ], // ] }
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
                };  // . >
     key <AB10> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   parenright           , underscore            , // (
-                   parenright           , underscore           ], // (
+                   equal                , equal                 , // (
+                   plus                 , plus                 ], // (
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
