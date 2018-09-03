@@ -297,26 +297,26 @@ xkb_symbols "lv5" {
                    Redirect(key=<DELE>) , Redirect(key=<DELE>) ]  // <DELE>
                };  // P
     key <AD11> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   grave                , asciitilde            , // ` ~      
-                   dead_tilde           , asciitilde           ], // ` ~      
+                   minus                , underscore            , // - _
+                   underscore           , underscore           ], //
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            ,
                    NoAction()           , NoAction()           ]
-               };  // [ {
+               };  // Querty [ {
     key <AD12> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   1                    , exclam                , // 1 !
-                   1                    , exclam               ], // 1 !
+                   equal                , plus                  , // = +
+                   plus                 , plus                 ], //
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            ,
                    NoAction()           , NoAction()           ]
-               };  // ] }
+               };  // Querty ] }
     key <BKSL> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   6                    , 6                     , // Esc
-                   asciicircum          , dead_circumflex      ], // Esc
+                   grave                , asciitilde            , // ` ~
+                   asciitilde           , asciitilde           ], //
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , // 
                    NoAction()           , NoAction()           ]  //
-               };  // \ |
+               };  // Querty \ |
 
     key <AC01> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Alt_L                , Alt_L                 , // Alt
@@ -446,31 +446,31 @@ xkb_symbols "lv5" {
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    Redirect(key=<PGDN>) , Redirect(key=<PGDN>)  , // <PGDN>
                    Redirect(key=<PGDN>) , NoAction()           ]
-               };  // N
+               };  // Querty N
     key <AB07> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   9                    , 9                     , // 9 (
-                   parenleft            , ampersand            ], // 9 (
+                   1                    , exclam                , // 1 !
+                   exclam               , exclam               ], // 1 !
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
-               };  // M
+               };  // Querty M
     key <AB08> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   0                    , 0                     , // 0 )
-                   parenright           , underscore           ], // 0 )
+                   6                    , asciicircum           , // 6 ^
+                   asciicircum          , asciicircum          ], // 6 ^
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
-               };  // , <
+               };  // Querty , <
     key <AB09> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   minus                , minus                 , // ] }
-                   underscore           , underscore           ], // ] }
+                   minus                , underscore            , // - _
+                   underscore           , underscore           ], // - _
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
                };  // . >
     key <AB10> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   equal                , equal                 , // (
-                   plus                 , plus                 ], // (
+                   equal                , plus                  , // = +
+                   plus                 , plus                 ], // = +
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
