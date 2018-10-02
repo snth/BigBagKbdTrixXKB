@@ -37,10 +37,12 @@ xkb_symbols "shift_alt_ctrl" {
                  symbols[Group1] = [ Shift_R, Shift_R ] };
     key <LCTL> { [ Alt_L         ] };
     key <RCTL> { [ Alt_R         ] };
+    key <RWIN> { [ Alt_R         ] };
     key <LFSH> { [ Control_L ] };
     key <RTSH> { [ Control_R ] };
     modifier_map Control { <LFSH>, <RTSH> };
-    modifier_map Mod1 { <LCTL>, <RCTL> };   // Alt status
+    modifier_map Mod1 { <LCTL>, <RCTL>, <RWIN> };   // Alt status
+//  modifier_map Mod4 { <LWIN> };
 };
 
 // Meta is mapped to second level of Alt keys.
