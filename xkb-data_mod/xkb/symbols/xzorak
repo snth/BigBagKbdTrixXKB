@@ -12,11 +12,13 @@ xkb_symbols "xz1" {
     key <AE12> { [	equal,	plus		]	};
 
     // Upper Row
-    key <AD11> { [ bracketleft,	braceleft	]	};
+    key <AD11> { [  bracketleft, braceleft	]	};
     key <AD12> { [ bracketright, braceright,  dead_tilde] };
+    key <BKSP> { [    BackSpace,  Escape] };
 
     // Home Row
-    key <AC11> { [   semicolon,	colon, dead_ogonek, dead_doubleacute ] };
+    key <CAPS> { [   BackSpace, Escape] };
+    key <AC11> { [   semicolon,	colon] };
 
     // Lower Row
     key <AB01> { [	    x,	X		]	};
