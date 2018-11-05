@@ -298,6 +298,7 @@
   md              Moldavian
   id              Indonesian (Jawi)
   my              Malay (Jawi, Arabic Keyboard)
+  xzorak          Xzorak (transitional Dvorak to Colemak layouts)
 
 ! variant
   chr             us: Cherokee
@@ -320,6 +321,7 @@
   dvorak-l        us: English (Dvorak, left-handed)
   dvorak-r        us: English (Dvorak, right-handed)
   dvorak-classic  us: English (classic Dvorak)
+  xzorak1         us: English (Xzorak1, transitional Dvorak to Colemak layout)
   dvp             us: English (programmer Dvorak)
   rus             us: Russian (US, phonetic)
   mac             us: English (Macintosh)
