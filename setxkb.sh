@@ -36,11 +36,13 @@ MyNAME=`basename $0`
 ## @@@ The default X11 dir under some (older) distros is /usr/lib/X11 @@@
 X11DIR='/usr/share/X11'; [ -d "${X11DIR}" ] || X11DIR='/usr/lib/X11'
 
-#~ XKBmodel=pc104aw-zqu	# ANSI-104 keyboard w/ Angle(Z)Wide(Quote) mod
-XKBmodel=pc105caw-sl	# ISO-105 keyboard w/ CurlAngleWide(Slash) mod
+XKBmodel=pc104      	# ANSI-104 keyboard 
+#~ XKBmodel=pc105caw-sl	# ISO-105 keyboard w/ CurlAngleWide(Slash) mod
 #~ XKBlayout='us(cmk_ed_us),gr(colemak),ru(colemak)'
-XKBlayout='no(cmk_ed_us)'	# Norwegian Colemak[eD]'Universal Symbols' layout
-XKBoption='misc:extend,lv5:caps_switch_lock,grp:shifts_toggle,compose:menu'
+#~ XKBlayout='no(cmk_ed_us)'	# Norwegian Colemak[eD]'Universal Symbols' layout
+XKBlayout='xzorak(xzorak1)'	# Xzorak transitional layout
+#~ XKBoption='misc:extend,lv5:caps_switch_lock,grp:shifts_toggle,compose:menu'
+XKBoption='misc:extend,lv5:lwin_switch_lock,xzorak:shift_alt_ctrl'
 VerboseLvl=9			# (-v) How much info should setxkbmap print out?
 KeepXKM='no'			# (-k) Retain old /var/lib/xkb/server-*.xkm files?
 XKBdir="${X11DIR}/xkb"	# (-d) The xkb-type dir to run setxkbmap from
