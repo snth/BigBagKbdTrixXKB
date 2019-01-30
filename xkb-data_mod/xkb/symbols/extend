@@ -227,8 +227,8 @@ xkb_symbols "lv5" {
 //               };  // Qwerty BackSpace
 
     key <AD01> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Escape               , Escape                , // Esc
-                   Escape               , Escape               ], // Esc
+                   grave                , asciitilde            , // ` ~
+                   asciitilde           , asciitilde           ], //
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , // 
                    NoAction()           , NoAction()           ]  //
@@ -304,10 +304,10 @@ xkb_symbols "lv5" {
                    NoAction()           , NoAction()           ]  //
                };  // Qwerty [ {
     key <AD12> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   equal                , plus                  , // = +
-                   plus                 , plus                 ], //
+                   Pointer_Button3      , Pointer_Button3       , // RBt(††)
+                   Pointer_Button3      , Pointer_Button3      ], // LBt
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   NoAction()           , NoAction()            ,
+                   PtrBtn(button=3)     , PtrBtn(button=3)      , // PtrRBt
                    NoAction()           , NoAction()           ]
                };  // Qwerty ] }
     key <BKSL> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
@@ -318,6 +318,13 @@ xkb_symbols "lv5" {
                    NoAction()           , NoAction()           ]  //
                };  // Qwerty \ |
 
+    key <CAPS> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
+                   Escape               , Escape                , // Esc
+                   Escape               , Escape               ], // Esc
+                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
+                   NoAction()           , NoAction()            , // 
+                   NoAction()           , NoAction()           ]  //
+               };  // Qwerty CAPSLOCK
     key <AC01> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Alt_L                , Alt_L                 , // Alt
                    space                , nobreakspace         ], // Space
@@ -434,12 +441,11 @@ xkb_symbols "lv5" {
 //                   Redirect(key=<PAST>) , Redirect(key=<PAST>) ]  // <PAST>(‡‡) (not working since Ub14.04?)
                };  // Qwerty V
     key <AB05> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Undo                 , Redo                  , // Undo/Redo
-                   Undo                 , Redo                 ], // Undo/Redo
+                   5                    , percent               , // 6 ^
+                   percent              , percent              ], // 6 ^
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-      Redirect(key=<AB01>,mods=Control,clearmods=LevelFive), Redirect(key=<AB01>,mods=Shift+Control,clearmods=LevelFive), // Ctrl+Z
-      Redirect(key=<AB01>,mods=Control,clearmods=LevelFive), Redirect(key=<AB01>,mods=Shift+Control,clearmods=LevelFive)] // Ctrl+Z
-//                   Redirect(key=<UNDO>) , Redirect(key=<UNDO>) ]  // <UNDO>(‡‡) (not working?)
+                   NoAction()           , NoAction()            , //
+                   NoAction()           , NoAction()           ]  //
                };  // Qwerty B
     key <AB06> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Page_Down            , Page_Down             , // PgDn
@@ -470,10 +476,10 @@ xkb_symbols "lv5" {
                    NoAction()           , NoAction()           ]  //
                };  // Qwerty . >
     key <AB10> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Pointer_Button3      , Pointer_Button3       , // RBt(††)
-                   Pointer_Button3      , Pointer_Button3      ], // LBt
+                   equal                , plus                  , // = +
+                   plus                 , plus                 ], //
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   PtrBtn(button=3)     , PtrBtn(button=3)      , // PtrRBt
+                   NoAction()           , NoAction()            ,
                    NoAction()           , NoAction()           ]
                };  // Qwerty / ?
 

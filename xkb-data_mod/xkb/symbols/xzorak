@@ -14,11 +14,11 @@ xkb_symbols "xzorak1" {
     // Upper Row
     key <AD11> { [  bracketleft, braceleft	]	};
     key <AD12> { [ bracketright, braceright,  dead_tilde] };
-    key <BKSP> { [    BackSpace,  Escape] };
+    key <BKSP> { [       Escape,  Escape        ] };
 
     // Home Row
-    key <CAPS> { [   BackSpace, Escape] };
-    key <AC11> { [   semicolon,	colon] };
+     key <CAPS> { [   BackSpace, Escape         ] };
+    key <AC11> { [   semicolon,	colon           ] };
 
     // Lower Row
     key <AB01> { [	    x,	X		]	};
