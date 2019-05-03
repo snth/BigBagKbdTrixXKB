@@ -17,7 +17,7 @@ xkb_symbols "xzorak1" {
     key <BKSP> { [       Escape,  Escape        ] };
 
     // Home Row
-     key <CAPS> { [   BackSpace, Escape         ] };
+    key <CAPS> { [   BackSpace, Escape         ] };
     key <AC11> { [   semicolon,	colon           ] };
 
     // Lower Row
@@ -25,6 +25,27 @@ xkb_symbols "xzorak1" {
     key <AB05> { [	    z,	Z		]	};
 
     key <AB10> { [	slash,	question	]	};
+
+};
+
+xkb_symbols "xzorak2" {
+
+    name[Group1]= "English (Xzorak, transitional Dvorak to Colemak layout)";
+
+    include "xzorak(xzorak1)"
+
+    // Upper Row
+    key <AD01> { [	    q,	Q         	]	};
+    key <AD07> { [      l,  L       	]	};
+    key <AD08> { [      u,  U           ]   };
+    key <AD10> { [ semicolon,  colon    ]   };
+
+    // Home Row
+    key <AC04> { [	    g,	G		    ]	};
+    key <AC11> {	[ apostrophe,	quotedbl	]	};
+
+    // Lower Row
+    key <AB02> { [	    c,	C		    ]	};
 
 };
 
