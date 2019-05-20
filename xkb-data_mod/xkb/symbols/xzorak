@@ -71,6 +71,33 @@ xkb_symbols "xzorak3" {
 
 };
 
+xkb_symbols "xzorak4" {
+
+    name[Group1]= "English (Xzorak, transitional Dvorak to Colemak layout)";
+
+    include "xzorak(xzorak3)"
+
+    // Upper Row
+    key <AD05> { [      b,  B       	]	};
+    key <AD09> { [      y,  Y           ]   };
+
+    // Home Row
+    key <AC02> { [	    r,	R		    ]	};
+    key <AC03> { [	    s,	S		    ]	};
+    key <AC04> { [	    t,	T		    ]	};
+    key <AC05> { [	    g,	G		    ]	};
+    key <AC07> { [	    n,	N		    ]	};
+    key <AC08> { [	    e,	E		    ]	};
+    key <AC09> { [	    i,	I		    ]	};
+    key <AC10> { [	    o,	O		    ]	};
+
+    // Lower Row
+    key <AB06> { [	    m,	M		    ]	};
+    key <AB07> { [	    h,	H		    ]	};
+
+};
+
+
 
 // Shift is mapped to the Alt keys, Alt to the Ctrl keys, and Ctrl to the Shift keys.
 partial modifier_keys
