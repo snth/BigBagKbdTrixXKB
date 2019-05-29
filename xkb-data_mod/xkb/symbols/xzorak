@@ -97,6 +97,31 @@ xkb_symbols "xzorak4" {
 
 };
 
+xkb_symbols "xzorak5" {
+
+    name[Group1]= "English (Xzorak, transitional Dvorak to Colemak layout)";
+
+    include "xzorak(xzorak4)"
+
+    // Top Row
+    key <AE11> { [  bracketleft, braceleft	]	};
+    key <AE12> { [ bracketright, braceright,  dead_tilde] };
+
+    // Upper Row
+    key <AD10> { [ apostrophe,	quotedbl	]	};
+    key <AD11> { [	slash,	question	]	};
+    key <AD12> { [	equal,	plus		]	};
+
+    // Home Row
+    key <AC11> { [	minus,	underscore	]	};
+
+    // Lower Row
+    key <AB08> { [ period,	greater		]	};
+    key <AB09> { [  comma,	less		]	};
+    key <AB10> { [  colon,  semicolon   ]   };
+
+};
+
 
 
 // Shift is mapped to the Alt keys, Alt to the Ctrl keys, and Ctrl to the Shift keys.
