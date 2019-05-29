@@ -122,6 +122,29 @@ xkb_symbols "xzorak5" {
 
 };
 
+xkb_symbols "xzorak6" {
+
+    name[Group1]= "English (Xzorak, transitional Dvorak to Colemak layout)";
+
+    include "xzorak(xzorak5)"
+
+    // Top Row
+    key <TLDE> { [        grave,   asciitilde           ] };
+    key <AE01> { [   numbersign,    ampersand           ] };
+    key <AE02> { [    braceleft,            1           ] };
+    key <AE03> { [    parenleft,            3           ] };
+    key <AE04> { [  bracketleft,            5           ] };
+    key <AE05> { [      percent,            7           ] };
+    key <AE06> { [  asciicircum,            9           ] };
+    key <AE07> { [       exclam,            8           ] };
+    key <AE08> { [ bracketright,            6           ] };
+    key <AE09> { [   parenright,            4           ] };
+    key <AE10> { [   braceright,            2           ] };
+    key <AE11> { [     asterisk,            0           ] };
+    key <AE12> { [    backslash,          bar           ] };
+    key <BKSL> { [       dollar,           at           ] };
+
+};
 
 
 // Shift is mapped to the Alt keys, Alt to the Ctrl keys, and Ctrl to the Shift keys.
