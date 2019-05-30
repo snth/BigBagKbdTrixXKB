@@ -262,18 +262,18 @@ xkb_symbols "lv5" {
                    Redirect(key=<ESC>)  , Redirect(key=<ESC>)  ]  // <ESC>
                };  // Qwerty T
     key <AD06> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Pointer_Button1      , Pointer_Button1       , // LBt(††)
-                   Pointer_Button1      , Pointer_Button1      ], // LBt
+                   End                  , End                   , // End
+                   KP_6                 , U21D2                ], // KP_6 → ⇒
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   PtrBtn(button=1)     , PtrBtn(button=1)      , // PtrLBt
+                   Redirect(key=<END>)  , Redirect(key=<END>)   , // <END>
                    NoAction()           , NoAction()           ]
                };  // Qwerty Y
     key <AD07> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Home                 , Home                  , // Home
-                   KP_4                 , U21D0                ], // KP_4 ← ⇐
+                   Page_Up              , Page_Up               , // PgUp
+                   Page_Up              , KP_Prior             ], // PgUp
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<HOME>) , Redirect(key=<HOME>)  , // <HOME>
-                   NoAction()           , NoAction()           ]
+                   Redirect(key=<PGUP>) , Redirect(key=<PGUP>)  , // <PGUP>
+                   Redirect(key=<PGUP>) , NoAction()           ]
                };  // Qwerty U
     key <AD08> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Up                   , Up                    , //  ↑
@@ -283,18 +283,18 @@ xkb_symbols "lv5" {
                    NoAction()           , NoAction()           ]
                };  // Qwerty I
     key <AD09> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   End                  , End                   , // End
-                   KP_6                 , U21D2                ], // KP_6 → ⇒
+                   Page_Down            , Page_Down             , // PgDn
+                   Page_Down            , KP_Next              ], // PgDn
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<END>)  , Redirect(key=<END>)   , // <END>
-                   NoAction()           , NoAction()           ]
+                   Redirect(key=<PGDN>) , Redirect(key=<PGDN>)  , // <PGDN>
+                   Redirect(key=<PGDN>) , NoAction()           ]
                };  // Qwerty O
     key <AD10> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   minus                , underscore            , // -
-                   KP_Enter             , KP_Enter             ], // KP_Enter
+                   Insert               , Insert                , // Ins
+                   Insert               , KP_Prior             ], // Ins
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   NoAction()           , NoAction()            , // -
-                   NoAction()           , NoAction()           ]
+                   Redirect(key=<INS>)  , Redirect(key=<INS>)   , // <INS>
+                   Redirect(key=<INS>)  , NoAction()           ]  // <INS>
                };  // Qwerty P
     key <AD11> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    1                    , exclam                , // 1 !
@@ -311,11 +311,11 @@ xkb_symbols "lv5" {
                    NoAction()           , NoAction()           ]
                };  // Qwerty ] }
     key <BKSL> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   grave                , asciitilde            , // ` ~
-                   asciitilde           , asciitilde           ], //
+                   Pointer_Button1      , Pointer_Button1       , // LBt(††)
+                   Pointer_Button1      , Pointer_Button1      ], // LBt
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   NoAction()           , NoAction()            , // 
-                   NoAction()           , NoAction()           ]  //
+                   PtrBtn(button=1)     , PtrBtn(button=1)      , // PtrLBt
+                   NoAction()           , NoAction()           ]
                };  // Qwerty \ |
 
     key <CAPS> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
@@ -361,11 +361,11 @@ xkb_symbols "lv5" {
                    NoAction()           , NoAction()           ]
                };  // Qwerty G
     key <AC06> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Page_Up              , Page_Up               , // PgUp
-                   Page_Up              , KP_Prior             ], // PgUp
+                   Home                 , Home                  , // Home
+                   KP_4                 , U21D0                ], // KP_4 ← ⇐
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<PGUP>) , Redirect(key=<PGUP>)  , // <PGUP>
-                   Redirect(key=<PGUP>) , NoAction()           ]
+                   Redirect(key=<HOME>) , Redirect(key=<HOME>)  , // <HOME>
+                   NoAction()           , NoAction()           ]
                };  // Qwerty H
     key <AC07> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Left                 , Left                  , //  ←
@@ -448,46 +448,46 @@ xkb_symbols "lv5" {
                    NoAction()           , NoAction()           ]  //
                };  // Qwerty B
     key <AB06> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Page_Down            , Page_Down             , // PgDn
-                   Page_Down            , KP_Next              ], // PgDn
-                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<PGDN>) , Redirect(key=<PGDN>)  , // <PGDN>
-                   Redirect(key=<PGDN>) , NoAction()           ]
-               };  // Qwerty N
-    key <AB07> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Insert               , Insert                , // Ins
-                   Insert               , KP_Prior             ], // Ins
-                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<INS>)  , Redirect(key=<INS>)   , // <INS>
-                   Redirect(key=<INS>)  , NoAction()           ]  // <INS>
-               };  // Qwerty M
-    key <AB08> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    6                    , asciicircum           , // 6 ^
                    asciicircum          , asciicircum          ], // 6 ^
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
-               };  // Qwerty , <
-    key <AB09> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
+               };  // Qwerty N
+    key <AB07> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    7                    , ampersand             , // 7 &
                    ampersand            , ampersand            ], // 7 &
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
+               };  // Qwerty M
+    key <AB08> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
+                   8                    , asterisk              , // 7 &
+                   asterisk             , asterisk             ], // 7 &
+                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
+                   NoAction()           , NoAction()            , //
+                   NoAction()           , NoAction()           ]  //
+               };  // Qwerty , <
+    key <AB09> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
+                   9                    , leftparen             , //
+                   leftparen            , leftparen            ], //
+                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
+                   NoAction()           , NoAction()            , //
+                   NoAction()           , NoAction()           ]  //
                };  // Qwerty . >
     key <AB10> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   equal                , plus                  , // = +
-                   plus                 , plus                 ], //
+                   0                    , rightparen            , //
+                   rightparen           , rightparen           ], //
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   NoAction()           , NoAction()            ,
-                   NoAction()           , NoAction()           ]
+                   NoAction()           , NoAction()            , //
+                   NoAction()           , NoAction()           ]  //
                };  // Qwerty / ?
 
 // NOTE: The Space key should preserve the Shift state; it's special because both levels have the same symbol.
 //       One might use a key type that has the 'preserve[Shift] = Shift;' property. However, I fix it directly.
    key <SPCE> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Space                , Space                 , // Esc
-                   Space                , Space                ], // Esc
+                   Return               , Return                , // Esc
+                   Return               , Return               ], // Esc
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , // 
                    NoAction()           , NoAction()           ]  //
