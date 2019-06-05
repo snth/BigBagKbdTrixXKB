@@ -108,16 +108,16 @@ xkb_symbols "xzorak5" {
     key <AE12> { [ bracketright, braceright,  dead_tilde] };
 
     // Upper Row
-    key <AD10> { [ apostrophe,	quotedbl	]	};
-    key <AD11> { [	slash,	question	]	};
-    key <AD12> { [	equal,	plus		]	};
+    key <AD10> { [	underscore,	minus	    ]	};
+    key <AD11> { [	    slash,	question	]	};
+    key <AD12> { [	    equal,	plus		]	};
 
     // Home Row
-    key <AC11> { [	minus,	underscore	]	};
+    key <AC11> { [ apostrophe,	quotedbl	]	};
 
     // Lower Row
-    key <AB08> { [ period,	greater		]	};
-    key <AB09> { [  comma,	less		]	};
+    key <AB08> { [  comma,	less		]	};
+    key <AB09> { [ period,	greater		]	};
     key <AB10> { [  colon,  semicolon   ]   };
 
 };
@@ -141,8 +141,8 @@ xkb_symbols "xzorak6" {
     key <AE09> { [   parenright,            2           ] };
     key <AE10> { [ bracketright,            0           ] };
     key <AE11> { [     asterisk,            8           ] };
-    key <AE12> { [    backslash,          bar           ] };
-    key <BKSL> { [       exclam,           at           ] };
+    key <AE12> { [       exclam,           at           ] };
+    key <BKSL> { [    backslash,          bar           ] };
 
 };
 
