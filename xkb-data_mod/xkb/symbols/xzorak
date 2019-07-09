@@ -109,8 +109,8 @@ xkb_symbols "xzorak5" {
 
     // Upper Row
     key <AD10> { [	underscore,	minus	    ]	};
-    key <AD11> { [	    slash,	question	]	};
-    key <AD12> { [	    equal,	plus		]	};
+    key <AD11> { [	     slash,	question	]	};
+    key <AD12> { [	     equal,	plus		]	};
 
     // Home Row
     key <AC11> { [ apostrophe,	quotedbl	]	};
@@ -130,19 +130,22 @@ xkb_symbols "xzorak6" {
 
     // Top Row
     key <TLDE> { [        grave,   asciitilde           ] };
-    key <AE01> { [   numbersign,    ampersand           ] };
-    key <AE02> { [  bracketleft,            1           ] };
+    key <AE01> { [   numbersign,            9           ] };
+    key <AE02> { [    braceleft,            1           ] };
     key <AE03> { [    parenleft,            3           ] };
-    key <AE04> { [    braceleft,            5           ] };
+    key <AE04> { [  bracketleft,            5           ] };
     key <AE05> { [      percent,            7           ] };
-    key <AE06> { [  asciicircum,            9           ] };
+    key <AE06> { [  asciicircum,    ampersand           ] };
     key <AE07> { [       dollar,            6           ] };
-    key <AE08> { [   braceright,            4           ] };
+    key <AE08> { [ bracketright,            4           ] };
     key <AE09> { [   parenright,            2           ] };
-    key <AE10> { [ bracketright,            0           ] };
+    key <AE10> { [   braceright,            0           ] };
     key <AE11> { [     asterisk,            8           ] };
-    key <AE12> { [       exclam,           at           ] };
-    key <BKSL> { [    backslash,          bar           ] };
+    key <AE12> { [    backslash,          bar           ] };
+
+    // Upper Row
+    key <AD12> { [	     equal,	plus		            ] };
+    key <BKSL> { [      exclam, at                      ] };
 
 };
 
