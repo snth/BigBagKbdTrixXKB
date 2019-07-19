@@ -227,8 +227,8 @@ xkb_symbols "lv5" {
 //               };  // Qwerty BackSpace
 
     key <AD01> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   grave                , asciitilde            , // ` ~
-                   asciitilde           , asciitilde           ], //
+                   Return               , Return                , // Enter
+                   Return               , Return               ], // Enter
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , // 
                    NoAction()           , NoAction()           ]  //
@@ -297,22 +297,22 @@ xkb_symbols "lv5" {
                    Redirect(key=<INS>)  , NoAction()           ]  // <INS>
                };  // Qwerty P
     key <AD11> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   1                    , exclam                , // 1 !
-                   exclam               , exclam               ], // 1 !
+                   minus                , minus                 , // - -
+                   minus                , minus                ], // - -
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
                };  // Qwerty [ {
     key <AD12> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Pointer_Button3      , Pointer_Button3       , // RBt(††)
-                   Pointer_Button3      , Pointer_Button3      ], // LBt
+                   plus                 , plus                  , // + +
+                   plus                 , plus                 ], // + +
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    PtrBtn(button=3)     , PtrBtn(button=3)      , // PtrRBt
                    NoAction()           , NoAction()           ]
                };  // Qwerty ] }
     key <BKSL> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Pointer_Button1      , Pointer_Button1       , // LBt(††)
-                   Pointer_Button1      , Pointer_Button1      ], // LBt
+                   backslash            , bar                   , // \ |
+                   bar                  , bar                  ], // \ |
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    PtrBtn(button=1)     , PtrBtn(button=1)      , // PtrLBt
                    NoAction()           , NoAction()           ]
@@ -469,15 +469,15 @@ xkb_symbols "lv5" {
                    Redirect(key=<PGDN>) , NoAction()           ]
                };  // Qwerty , <
     key <AB09> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   9                    , leftparen             , //
-                   leftparen            , leftparen            ], //
+                   grave                , asciitilde            , // ` ~
+                   asciitilde           , asciitilde           ], // ` ~
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
                };  // Qwerty . >
     key <AB10> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   0                    , rightparen            , //
-                   rightparen           , rightparen           ], //
+                   question             , question              , // ? ?
+                   question             , question             ], // ? ?
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
