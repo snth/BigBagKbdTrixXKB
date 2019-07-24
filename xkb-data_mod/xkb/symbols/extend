@@ -64,8 +64,8 @@ xkb_symbols "lv5" {
     key.type[group1]="EIGHT_LEVEL_SEMIALPHABETIC"; // Lock affects lv1/5 but not lv3/7 - a bit inflexible but OK I guess
 
     key <ESC>  { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Return               , Return                , // Enter
-                   Return               , Return               ], // Enter
+                   Caps_Lock            , Caps_Lock             , // Caps_Lock
+                   Caps_Lock            , Caps_Lock            ], // Caps_Lock
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    Redirect(key=<RTRN>) , Redirect(key=<RTRN>)  , // <RTRN>
                    Redirect(key=<RTRN>) , Redirect(key=<RTRN>) ]  // <RTRN>
@@ -139,8 +139,8 @@ xkb_symbols "lv5" {
 // NOTE: Earlier, if I set lv5-6 of Esc to Caps_Lock, lv1-4 would be CapsLock PLUS Esc! Is this fixed now?
 //       If not, I might not have to send the Caps_Lock keysymbol as long as the LockMods action is there?
     key <TLDE> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Caps_Lock            , Caps_Lock             , // Caps_Lock
-                   Caps_Lock            , Caps_Lock            ], // Caps_Lock
+                   Return               , Return                , // Enter
+                   Return               , Return               ], // Enter
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    LockMods(mods=Lock)   , LockMods(mods=Lock)   , // Lock mod for <CAPS>
                    LockMods(mods=Lock)   , LockMods(mods=Lock)  ]  // Lock mod for <CAPS>
