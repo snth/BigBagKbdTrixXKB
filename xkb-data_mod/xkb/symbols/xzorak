@@ -7,14 +7,14 @@ xkb_symbols "xzorak1" {
 
     include "us(dvorak)"
 
-    // Top Row
+        // Top Row
     key <AE11> { [	minus,	underscore	]	};
     key <AE12> { [	equal,	plus		]	};
 
     // Upper Row
     key <AD11> { [  bracketleft, braceleft	]	};
     key <AD12> { [ bracketright, braceright,  dead_tilde] };
-    key <BKSP> { [       Escape,  Escape        ] };
+    key <BKSP> { [       Return,  Return        ] };
 
     // Home Row
     key <CAPS> { [   BackSpace, Escape         ] };
@@ -109,8 +109,8 @@ xkb_symbols "xzorak5" {
 
     // Upper Row
     key <AD10> { [  colon,  semicolon   ]   };
-    key <AD11> { [	underscore,	minus	    ]	};
-    key <AD12> { [	     equal,	plus		]	};
+    key <AD11> { [	minus,  underscore  ]	};
+    key <AD12> { [	equal,	plus		]	};
 
     // Home Row
     key <AC11> { [ apostrophe,	quotedbl	]	};
@@ -145,7 +145,10 @@ xkb_symbols "xzorak6" {
 
     // Upper Row
     key <AD12> { [	     equal,	plus		            ] };
-    key <BKSL> { [      exclam, at                      ] };
+    key <BKSL> { [   backslash, bar                     ] };
+
+    // Home Row
+    key <RTRN> { [      exclam,	at                      ] };
 
 };
 
