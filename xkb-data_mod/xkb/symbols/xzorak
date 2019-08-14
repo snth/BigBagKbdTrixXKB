@@ -144,11 +144,17 @@ xkb_symbols "xzorak6" {
     key <AE12> { [    backslash,          bar           ] };
 
     // Upper Row
-    key <AD12> { [	     equal,	plus		            ] };
+    key <AD01> { [  apostrophe,	quotedbl	            ] };
+    key <AD10> { [	         q,	Q         	            ] };
+    key <AD11> { [	slash,	question	]	};
     key <BKSL> { [   backslash, bar                     ] };
 
     // Home Row
+    key <AC11> { [	     minus,  underscore             ] };
     key <RTRN> { [      exclam,	at                      ] };
+
+    // Lower Row
+    key <AB10> { [       colon, semicolon              ] };
 
 };
 

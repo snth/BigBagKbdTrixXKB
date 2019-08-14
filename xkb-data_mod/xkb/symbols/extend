@@ -296,8 +296,8 @@ xkb_symbols "lv5" {
                    Redirect(key=<INS>)  , NoAction()           ]  // <INS>
                };  // Qwerty P
     key <AD11> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   minus                , minus                 , // - -
-                   minus                , minus                ], // - -
+                   question             , question              , // - -
+                   question             , question             ], // - -
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    NoAction()           , NoAction()            , //
                    NoAction()           , NoAction()           ]  //
