@@ -150,7 +150,7 @@ xkb_symbols "xzorak6" {
     key <BKSL> { [   backslash, bar                     ] };
 
     // Home Row
-    key <AC11> { [	     minus,  underscore             ] };
+    key <AC11> { [  underscore, minus                   ] };
     key <RTRN> { [      exclam,	at                      ] };
 
     // Lower Row
