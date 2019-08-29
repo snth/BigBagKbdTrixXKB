@@ -275,25 +275,25 @@ xkb_symbols "lv5" {
                    NoAction()           , NoAction()           ]
                };  // Qwerty U
     key <AD08> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Up                   , Up                    , //  ↑
-                   KP_5                 , U21D4                ], // KP_5 ↔ ⇔
-                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<UP>)   , Redirect(key=<UP>)    , // <UP>
-                   NoAction()           , NoAction()           ]
-               };  // Qwerty I
-    key <AD09> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   End                  , End                   , // End
-                   KP_6                 , U21D2                ], // KP_6 → ⇒
-                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<END>)  , Redirect(key=<END>)   , // <END>
-                   NoAction()           , NoAction()           ]
-               };  // Qwerty O
-    key <AD10> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Insert               , Insert                , // Ins
                    Insert               , KP_Prior             ], // Ins
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    Redirect(key=<INS>)  , Redirect(key=<INS>)   , // <INS>
                    Redirect(key=<INS>)  , NoAction()           ]  // <INS>
+               };  // Qwerty I
+    key <AD09> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
+                   asciicircum          , dollar                , // ` ~
+                   dollar               , dollar               ], // ` ~
+                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
+                   NoAction()           , NoAction()            , //
+                   NoAction()           , NoAction()           ]  //
+               };  // Qwerty O
+    key <AD10> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
+                   End                  , End                   , // End
+                   KP_6                 , U21D2                ], // KP_6 → ⇒
+                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
+                   Redirect(key=<END>)  , Redirect(key=<END>)   , // <END>
+                   NoAction()           , NoAction()           ]
                };  // Qwerty P
     key <AD11> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    question             , question              , // - -
