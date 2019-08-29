@@ -468,18 +468,18 @@ xkb_symbols "lv5" {
                    NoAction()           , NoAction()           ]  //
                };  // Qwerty M
     key <AB08> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Page_Down            , Page_Down             , // PgDn
-                   Page_Down            , KP_Next              ], // PgDn
-                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<PGDN>) , Redirect(key=<PGDN>)  , // <PGDN>
-                   Redirect(key=<PGDN>) , NoAction()           ]
-               };  // Qwerty , <
-    key <AB09> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Page_Up              , Page_Up               , // PgUp
                    Page_Up              , KP_Prior             ], // PgUp
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    Redirect(key=<PGUP>) , Redirect(key=<PGUP>)  , // <PGUP>
                    Redirect(key=<PGUP>) , NoAction()           ]
+               };  // Qwerty , <
+    key <AB09> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
+                   Page_Down            , Page_Down             , // PgDn
+                   Page_Down            , KP_Next              ], // PgDn
+                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
+                   Redirect(key=<PGDN>) , Redirect(key=<PGDN>)  , // <PGDN>
+                   Redirect(key=<PGDN>) , NoAction()           ]
                };  // Qwerty . >
     key <AB10> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    semicolon            , colon                 , // ? ?
