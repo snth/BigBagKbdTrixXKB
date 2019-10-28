@@ -146,7 +146,7 @@ xkb_symbols "xzorak6" {
     // Upper Row
     key <AD01> { [  apostrophe,	quotedbl	            ] };
     key <AD10> { [	         q,	Q         	            ] };
-    key <AD11> { [	slash,	question	]	};
+    key <AD11> { [	     slash,	question	            ] };
     key <BKSL> { [   backslash, bar                     ] };
 
     // Home Row
@@ -155,6 +155,24 @@ xkb_symbols "xzorak6" {
 
     // Lower Row
     key <AB10> { [       colon, semicolon              ] };
+
+};
+
+xkb_symbols "xzorak7" {
+
+    name[Group1]= "English (Xzorak, transitional Dvorak to Colemak layout)";
+
+    include "xzorak(xzorak6)"
+
+    // Top Row
+
+    // Upper Row
+    key <AD01> { [	         q,	Q         	            ] };
+    key <AD10> { [  apostrophe,	quotedbl	            ] };
+
+    // Home Row
+
+    // Lower Row
 
 };
 
