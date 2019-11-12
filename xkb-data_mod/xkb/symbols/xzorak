@@ -170,12 +170,12 @@ xkb_symbols "xzorak7" {
     key <AE03> { [    parenleft,            3           ] };
     key <AE04> { [  bracketleft,            1           ] };
     key <AE05> { [      percent,            9           ] };
-    key <AE06> { [  asciicircum,       dollar           ] };
-    key <AE07> { [     asterisk,            8           ] };
+    key <AE06> { [  asciicircum,    ampersand           ] };
+    key <AE07> { [       dollar,            8           ] };
     key <AE08> { [ bracketright,            0           ] };
     key <AE09> { [   parenright,            2           ] };
     key <AE10> { [   braceright,            4           ] };
-    key <AE11> { [    ampersand,            6           ] };
+    key <AE11> { [     asterisk,            6           ] };
 
     // Upper Row
     // key <AD01> { [	         q,	Q         	            ] };
